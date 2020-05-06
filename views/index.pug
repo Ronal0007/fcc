@@ -1,0 +1,431 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    link(rel='canonical', href='https://getbootstrap.com/docs/4.3/examples/navbar-fixed/')
+    link(rel='stylesheet', href='https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='./bootstrap/css/style.css')
+    link(rel="shortcut icon" href="./images/LOGO NGO 2.jpg")
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/504729ba/bootstrap-4-latest.min.js')
+    // font awesome
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
+     script(type='text/javascript', src='./bootstrap/js/style.js')
+    // slider
+    
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+   
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+    style.
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+        }
+
+    title Foundation For Community Care
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top(style='background-color: #0a0d36')
+      a.navbar-brand.font-bold(href='/') Foundation Community Care
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.nav-pills.nav-fill
+            a.nav-link.btn-outline-primary(href='#aboutus') About Us
+          li.nav-item.nav-pills.nav-fill
+            a.nav-link.btn-outline-primary(href='#servicespanel') Services
+          li.nav-item.nav-pills.nav-fill
+            a.nav-link.btn-outline-primary(href='#contact') Contacts
+    // Main jumbotron for a primary marketing message or call to action
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+        li(data-target='#carouselExampleIndicators', data-slide-to='3')
+        li(data-target='#carouselExampleIndicators', data-slide-to='4')
+      // Wrapper for slides
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='/images/1.1.jpg', data-color='lightblue', alt='First Image')
+          .carousel-caption.d-md-block
+            h5 Socialize with Generation
+           
+        .carousel-item
+          img.d-block.w-100(src='/images/2.2.jpg', data-color='firebrick', alt='Second Image')
+          .carousel-caption.d-md-block
+            h5 Water Come First In our Needs
+        
+        .carousel-item
+          img.d-block.w-100(src='/images/3.3.jpg', data-color='violet', alt='fourth Image')
+          .carousel-caption.d-md-block
+            h5 Education can lead us.
+        .carousel-item
+          img.d-block.w-100(src='/images/4.4.jpg', data-color='violet', alt='fifth Image')
+          .carousel-caption.d-md-block
+            h5 Women are the one stand behind successes.
+        .carousel-item
+          img.d-block.w-100(src='/images/5.5.jpg', data-color='violet', alt='seventh Image')
+          .carousel-caption.d-md-block
+            h5 Shelter, as not only Food
+      // Controls
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
+    // Card
+    .card-cascade.wider
+     // Card image
+     .view.view-cascade.overlay
+        img.card-img-top(src='./images/LOGO NGO 2.jpg', alt='Card image cap')
+        a(href='#!')
+         .mask.rgba-white-slight
+     // Card content
+     .card-body.card-body-cascade.text-center.container
+        // Title
+        h4.card-title#aboutus
+          strong.font-bold ABOUT US
+          hr#new1
+        // Subtitle
+        h6.font-weight-bold.indigo-text.py-2 FOUNDATION FOR COMMUNITY CARE
+        // Text
+        p.card-text
+          | Has been duly registered under the Non Governmental Organizations Act, 2002 with Registration No 00NGO/R/085, and its Operations are in Tanzania Main Land.
+          | The Main goals are to Empower Women, Provide Facilities for better and Quality Education, Deals with Religious FAcilities such as Donations, Sustainable Water supply through drilling of Wells.
+        
+     .card-body.card-body-cascade.text-center.container
+        // Title
+        h4.card-title#aboutus
+          strong.font-bold MISSION
+          hr#new1
+        // Text
+        p.card-text
+          | To support women and children who lives in dangerous environment by solving challenges facing them, thats are health, education, financially and shelter.
+        // Card
+     .card-body.card-body-cascade.text-center.container
+        // Title
+        h4.card-title#aboutus
+          strong.font-bold VISION
+          hr#new1
+        // Text
+        p.card-text
+          |To have women and children with positive developmental and health, economic, educational, intellectual and moral changes..
+        br
+        // Linkedin
+        a.px-2.fa-lg.li-ic
+          i.fab.fa-linkedin-in
+        // Twitter
+        a.px-2.fa-lg.tw-ic(href="https://twitter.com/FoundationForC5/")
+          i.fab.fa-twitter
+        // Dribbble
+        a.px-2.fa-lg.fb-ic(href="https://web.facebook.com/fcc.tanzaniango/") 
+         i.fab.fa-facebook-f
+        // instagram
+        a.px-2.fa-lg.fb-ic(href="https://www.instagram.com/fcc_org/")
+         i.fab.fa-instagram
+        //pinterest
+        a.px-2.fa-lg.fb-ic
+          i.fab.fa-pinterest
+    .div4#servicespanel
+        .container
+            .row.justify-content-center
+                .card.bg-light.mb-3(style='max-width: 15rem;')
+                        .card-header(style='background-color: #0a0d36') Women Empowerment
+                        .card-body
+                            h5.card-title Women and Society
+                            p.card-text
+                                | Through cancelling, From our best advisor we aim to provide some information about entreprenuership and some core values to the society.
+                .card.bg-light.mb-3(style='max-width: 15rem;')
+                        .card-header(style='background-color: #0a0d36') Education Facilities
+                        .card-body
+                            h5.card-title Students and Schools
+                            p.card-text
+                                | We aim to help students with need, who came from poor families, we help them with uniforms, Books, Meals and other needs.
+                .card.bg-light.mb-3(style='max-width: 15rem;')
+                        .card-header(style='background-color: #0a0d36') Wells Project at Rural Areas
+                        .card-body
+                            h5.card-title Water Availability and tools
+                            p.card-text
+                                | By helping and giving helping hand to the government, drilling wells at rural area and make sure water facilities are available at high potential.
+                .card.bg-light.mb-3(style='max-width: 15rem;')
+                        .card-header(style='background-color: #0a0d36') Religious Facilities
+                        .card-body
+                            h5.card-title Both Muslim and christian
+                            p.card-text
+                               | Without breaking the law, we will work hand to hand with religious institute inorder to reveal what other may need.
+    
+
+    section#team.team-area
+      .container
+        .row
+          .col-md-12
+            .site-heading.text-center
+              h2
+                | Our 
+                span Team
+              h4 Meet our awesome and expert team members
+        .row.team-items
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='tel:+255763484094')
+                    i.fas.fa-envelope-open
+                h4 Emanuel B Wisso 
+                span CHIEF EXECUTIVE OFFICER
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4 
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='tel:+255676512794')
+                    i.fas.fa-envelope-open
+                h4 Juliana A Zegera
+                span CHIEF DEPUTY
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4 
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='+27718256733')
+                    i.fas.fa-envelope-open
+                h4 Ainat Anitha Kimath
+                span PROJECT MANAGER SA
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4 
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='tel:+255757092876')
+                    i.fas.fa-envelope-open
+                h4 Faza Wisso
+                span PROJECT MANAGER TZ
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4 
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='#')
+                    i.fas.fa-envelope-open
+                h4 Maria M Kichana
+                span ACCOUNTANT
+          .col-md-4.single-item
+            .item
+              .thumb
+                img.img-fluid(src='https://i.ibb.co/JC4skS0/team-animate.jpg', alt='Thumb')
+                .overlay
+                  h4 
+                  p
+                    
+                  .social
+                    ul
+                      li.twitter
+                        a(href='#')
+                          i.fab.fa-twitter
+                      li.pinterest
+                        a(href='#')
+                          i.fab.fa-pinterest
+                      li.instagram
+                        a(href='#')
+                          i.fab.fa-instagram
+                      li.vimeo
+                        a(href='#')
+                          i.fab.fa-vimeo-v
+              .info
+                span.message
+                  a(href='#')
+                    i.fas.fa-envelope-open
+                h4 Editha J Shirima
+                span STUFF MEMBER
+          
+
+    #carouselExampleIndicatorss.carousel.slide.container(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+        li(data-target='#carouselExampleIndicators', data-slide-to='3')
+        li(data-target='#carouselExampleIndicators', data-slide-to='4')
+        li(data-target='#carouselExampleIndicators', data-slide-to='5')
+        li(data-target='#carouselExampleIndicators', data-slide-to='6')
+      .carousel-inner(role='listbox')
+        // Slide One - Set the background image for this slide in the line below
+        .carousel-item#another.active(style="background-image: url('./images/1.jpeg')")
+          .carousel-caption
+            h2.display-4.font-bold Mazizini Orphanage Center
+            p.lead We as FCC, as part of our mission we came at mazizini to visit those children and help then with one way to another
+        // Slide Two - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/2.jpeg')")
+          .carousel-caption
+            h2.display-4.font-bold Mazizini Orphanage Center
+            p.lead We as FCC, as part of our mission we came at mazizini to visit those children and help then with one way to another
+        // Slide Three - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/3.jpeg')")
+          .carousel-caption
+            h2.display-4.font-bold Mazizini Orphanage Center
+            p.lead We as FCC, we ate afternoon meal with them (children) as family  
+        // Slide Three - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/4.jpeg')")
+          .carousel-caption
+            h2.display-4.font-bold Mazizini Orphanage Center
+            p.lead We as FCC, as part of our mission we came at mazizini to visit those children and help then with one way to another
+        // Slide Three - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/5.jpg')")
+          .carousel-caption
+            h2.display-4.font-bold Raleigh Tanzania
+            p.lead As part of our mission, we work with other organization to deliver whats needed to the community
+        // Slide Three - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/6.jpg')")
+          .carousel-caption
+            h2.display-4.font-bold Raleigh Tanzania
+            p.lead As part of our mission, we work with other organization to deliver whats needed to the community
+        // Slide Three - Set the background image for this slide in the line below
+        .carousel-item#another(style="background-image: url('./images/7.jpg')")
+          .carousel-caption
+            h2.display-3.font-bold Raleigh Tanzania
+            p.lead As part of our mission, we work with other organization to deliver whats needed to the community
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
+
+    // Footer
+    footer.page-footer.font-small.cyan#contact(style='background-color: #0a0d36')
+        // Copyright
+        .footer-copyright.text-center.py-3
+          a.px-3.fa-lg.tw-ic Tel:
+            i.fa.fa-phone
+          a.text-right#tanzania(href='tel:+255763484094') Tanzania     |  
+          a.text-left#tanzania(href='tel:+255676512794') Tanzania      |  
+          a.text-center#south(href='tel:+27718256733') South Africa    
+        .footer-copyright.text-center.py-3
+            | To Donate, Please Contact us Through
+            | M-PESA , 
+            | TIGO-PESA , 
+            | AirTel Money, 
+            | CRDB              
+        .footer-copyright.text-center.py-3
+            | © 2019 Copyright:
+            a(href='')  FCC.org | Emanuel Wisso
+        // Copyright
+    // Footer
+    
+
+            
